@@ -34,10 +34,3 @@ To execute:
 
 	cd /path/to/geospatial_uncertainty_vis
 	python geospatial_uncertainty.py
-
-################################
-
-background_image credits:
-
-https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA16988
-https://en.wikipedia.org/wiki/File:Map_of_the_Battle_of_the_Somme,_1916.svg
