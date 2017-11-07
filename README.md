@@ -6,7 +6,7 @@ Event locations are often reported via (latitude, longitude) as well as uncertai
 
 ![Alt text](/example_plots/ellipse_uncertainty.png?raw=true "Optional Title")
 
-The above plot cannot convey the joint likelihood (shown below) of an event at each position.  
+The above plot cannot convey the joint likelihood of an event at each position. The heat map is essentially a gaussian mixture model, and displays the joint probability that an event has occurred at a given grid square.
 
 ![Alt text](/example_plots/gauss_probability_map.png?raw=true "Optional Title")
 
