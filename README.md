@@ -4,7 +4,7 @@ Python script to plot geospatial uncertainty in a mathematically rigorous manner
 
 Event locations are often reported via (latitude, longitude) as well as uncertainty in position.  We adopt the frequent assumption that errors are Gaussian in nature.  Positional uncertainty can be represented by a positional ellipse with width (sigma_x) and height (sigma_y) represented by uncertainty in longitude and latitude, respectively.  The eye is typically drawn to large objects (which are less certain in this case), so we can partially offset this effect by scaling opacity inversely with uncertainty, as shown below:
 
-![Alt text](/example_plots/ellipse_unertainty.png?raw=true "Optional Title")
+![Alt text](/example_plots/ellipse_uncertainty.png?raw=true "Optional Title")
 
 The above plot cannot convey the joint likelihood (shown below) of an event at each position.  
 
@@ -21,13 +21,16 @@ We can use this probability map to more accurately convey positional uncertainty
 geospatial_uncertainty.py
 
 dependencies:
- 	cv2
-	numpy
-	matplotlib
+  cv2
+  numpy
+  matplotlib
 
 update line 15 with the correct '/path/to/geospatial_uncertainty'
 
 The python script generates a number of random points, computes the combined probability map, and visualizes location uncertainty by plotting the points on a map image.
+
+To execute:
+	python geospatial_uncertainty.py
 
 #############
 background_image credits:
