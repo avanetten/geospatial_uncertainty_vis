@@ -1,5 +1,3 @@
-################################
-
 background_image credits:
 
 https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA16988
