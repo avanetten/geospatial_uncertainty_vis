@@ -10,7 +10,7 @@ The above plot cannot convey the joint likelihood (shown below) of an event at e
 
 ![Alt text](/example_plots/gauss_probability_map.png?raw=true "Optional Title")
 
-We can use this probability map to more accurately convey positional uncertainty by assigning the alpha channel (i.e. opacity) as the probability map. 
+We can use this probability map to more accurately convey positional uncertainty by assigning the alpha channel (i.e. opacity) as the probability map. The opacity in this final image is proportional to the probability that an event occured at that location, and more accurately conveys the true uncertainty in event location.
 
 ![Alt text](/example_plots/gauss_uncertainty.png?raw=true "Optional Title")
 
@@ -21,6 +21,7 @@ We can use this probability map to more accurately convey positional uncertainty
 geospatial_uncertainty.py
 
 dependencies:
+
   cv2
   numpy
   matplotlib
@@ -30,9 +31,11 @@ update line 15 with the correct '/path/to/geospatial_uncertainty'
 The python script generates a number of random points, computes the combined probability map, and visualizes location uncertainty by plotting the points on a map image.
 
 To execute:
+
 	python geospatial_uncertainty.py
 
 #############
+
 background_image credits:
 
 https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA16988
