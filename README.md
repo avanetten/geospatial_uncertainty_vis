@@ -20,17 +20,17 @@ We can use this probability map to more accurately convey positional uncertainty
 
 geospatial_uncertainty.py
 
+
+The python script generates a number of random points, computes the combined probability map, and visualizes location uncertainty by plotting the points on an image that serves as a proxy for a map.
+
 dependencies:
 
 	cv2
  	numpy
   	matplotlib
 
-update line 15 with the correct '/path/to/geospatial_uncertainty_vis'
-
-The python script generates a number of random points, computes the combined probability map, and visualizes location uncertainty by plotting the points on a map image.
-
 To execute:
 
 	cd /path/to/geospatial_uncertainty_vis
+	# update line 15 with the correct '/path/to/geospatial_uncertainty_vis'
 	python geospatial_uncertainty.py
