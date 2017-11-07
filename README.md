@@ -1,6 +1,6 @@
 # geospatial_uncertainty_vis
 
-Python script to plot geospatial uncertainty in a mathematically rigorous manner.  We assume that all events to be plotted are of the same type, so we are concerned with the scenario of whether event1, event2, or event3 occurred at location (x,y).
+Python script to plot geospatial uncertainty in a mathematically rigorous manner.  We assume that all events to be plotted are of the same type, so we are concerned with the scenario of whether event1, event2, or event3 occurred at location (x,y). Each event has a position (x,y), as well as an uncertainty associated with each coordinate (sigma_x, sigma_y).
 
 Event locations are often reported via (latitude, longitude) as well as uncertainty in position.  We adopt the frequent assumption that errors are Gaussian in nature.  Positional uncertainty can be represented by a positional ellipse with width (sigma_x) and height (sigma_y) represented by uncertainty in longitude and latitude, respectively.  The eye is typically drawn to large objects (which are less certain in this case), so we can partially offset this effect by scaling opacity inversely with uncertainty, as shown below:
 
