@@ -34,3 +34,7 @@ To execute:
 	cd /path/to/geospatial_uncertainty_vis
 	# update line 15 with the correct '/path/to/geospatial_uncertainty_vis'
 	python geospatial_uncertainty.py
+	# output is akin to the plot below:
+	
+![Alt text](/example_plots/outplot.png?raw=true "Optional Title")
+
