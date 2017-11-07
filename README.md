@@ -16,28 +16,28 @@ We can use this probability map to more accurately convey positional uncertainty
 
 
 
-#############
+################################
 
 geospatial_uncertainty.py
 
 dependencies:
 
-  cv2
-  numpy
-  matplotlib
+	cv2
+ 	numpy
+  	matplotlib
 
-update line 15 with the correct '/path/to/geospatial_uncertainty'
+update line 15 with the correct '/path/to/geospatial_uncertainty_vis'
 
 The python script generates a number of random points, computes the combined probability map, and visualizes location uncertainty by plotting the points on a map image.
 
 To execute:
 
+	cd /path/to/geospatial_uncertainty_vis
 	python geospatial_uncertainty.py
 
-#############
+################################
 
 background_image credits:
 
 https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA16988
 https://en.wikipedia.org/wiki/File:Map_of_the_Battle_of_the_Somme,_1916.svg
-https://commons.wikimedia.org/wiki/File:China_blank_map.svg
