@@ -6,11 +6,11 @@ Event locations are often reported via (latitude, longitude) as well as uncertai
 
 ![Alt text](/example_plots/ellipse_uncertainty.png?raw=true "Optional Title")
 
-The above plot cannot convey the joint likelihood of an event at each position. The heat map is essentially a gaussian mixture model, and displays the joint probability that an event has occurred at a given grid square.
+The above plot cannot convey the joint likelihood of an event at each position. The heat map below is essentially a gaussian mixture model, and displays the joint probability that an event has occurred at a given grid square.
 
 ![Alt text](/example_plots/gauss_probability_map.png?raw=true "Optional Title")
 
-We can use this probability map to more accurately convey positional uncertainty by assigning the alpha channel (i.e. opacity) as the probability map. The opacity in this final image is proportional to the probability that an event occured at that location, and more accurately conveys the true uncertainty in event location.
+We can use this probability map to more accurately convey positional uncertainty by assigning the alpha channel (i.e. opacity) as the probability map. The opacity in the final image below is proportional to the probability that an event occured at that location, and more accurately conveys the true uncertainty in event location.
 
 ![Alt text](/example_plots/gauss_uncertainty.png?raw=true "Optional Title")
 
