@@ -4,15 +4,15 @@ Python script to visualize and plot geospatial position uncertainty in a mathema
 
 Event locations are often reported via (latitude, longitude) as well as uncertainty in position.  We adopt the frequent assumption that errors are Gaussian in nature.  Positional uncertainty can be represented by a positional ellipse with width (sigma_x) and height (sigma_y) represented by uncertainty in longitude and latitude, respectively.  The eye is typically drawn to large objects (which are less certain in this case), so we can partially offset this effect by scaling opacity inversely with uncertainty, as shown below:
 
-![Alt text](/example_plots/ellipse_uncertainty.png?raw=true "Optional Title")
+![Alt text](/example_plots/ellipse_uncertainty.png?raw=true "Figure 1")
 
 The above plot cannot convey the joint likelihood of an event at each position. The heat map below is essentially a gaussian mixture model, and displays the joint probability that an event has occurred at a given grid square.
 
-![Alt text](/example_plots/gauss_probability_map.png?raw=true "Optional Title")
+![Alt text](/example_plots/gauss_probability_map.png?raw=true "Figure 2")
 
 We can use this probability map to more accurately convey positional uncertainty by assigning the alpha channel (i.e. opacity) as the probability map. The opacity in the final image below is proportional to the probability that an event occured at that location, and more accurately conveys the true uncertainty in event location.
 
-![Alt text](/example_plots/gauss_uncertainty.png?raw=true "Optional Title")
+![Alt text](/example_plots/gauss_uncertainty.png?raw=true "Figure 3")
 
 
 
@@ -36,5 +36,5 @@ To execute:
 	python geospatial_uncertainty.py
 	# output is akin to the plot below:
 	
-![Alt text](/example_plots/outplot.png?raw=true "Optional Title")
+![Alt text](/example_plots/outplot.png?raw=true "Figure 4")
 
